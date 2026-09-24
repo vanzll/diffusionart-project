@@ -9,6 +9,48 @@
   let generation = 0;
   let pairedPlayback = false;
   let correcting = false;
+  const showcase = [...document.querySelectorAll('.showcase-video')];
+  const showcaseButton = document.getElementById('play-showcase');
+  const showcaseStatus = document.getElementById('showcase-status');
+  let showcaseEpoch = 0;
+
+  function updateShowcaseControl(playing) {
+    const label = playing ? 'Pause showcase videos' : 'Play showcase videos';
+    showcaseButton.setAttribute('aria-label', label);
+    showcaseButton.title = label;
+    showcaseButton.querySelector('img').src = `assets/${playing ? 'pause' : 'play'}.svg`;
+  }
+
+  function pauseShowcase() {
+    showcaseEpoch++;
+    showcase.forEach(video => video.pause());
+    updateShowcaseControl(false);
+  }
+
+  showcaseButton.addEventListener('click', async () => {
+    if (showcase.some(video => !video.paused)) { pauseShowcase(); return; }
+    const token = ++showcaseEpoch;
+    showcaseStatus.textContent = '';
+    try {
+      await Promise.all(showcase.map(video => video.play()));
+      if (token === showcaseEpoch) updateShowcaseControl(true);
+    } catch (error) {
+      if (token !== showcaseEpoch) return;
+      pauseShowcase();
+      showcaseStatus.textContent = 'A video could not be played. Try its individual playback control.';
+    }
+  });
+  showcase.forEach(video => {
+    const refresh = () => updateShowcaseControl(showcase.some(item => !item.paused));
+    video.addEventListener('play', refresh);
+    video.addEventListener('pause', refresh);
+  });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) pauseShowcase(); });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      if (!entries[0].isIntersecting) pauseShowcase();
+    }, { threshold: 0.05 }).observe(document.querySelector('.showcase-reel'));
+  }
 
   function setPlayControl(playing) {
     const label = playing ? 'Pause both videos' : 'Play both videos';

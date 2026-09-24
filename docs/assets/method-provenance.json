@@ -1,0 +1,7 @@
+{
+  "source": "DiffusionART_method_overview_paper.pdf",
+  "source_revision": "author-refined method figure, 2026-09-21",
+  "asset": "method-overview.png",
+  "conversion": "PDF rasterized with pdftoppm, longest side 1900px; no content edits",
+  "sha256": "0d442e2dd071a7fd4fe808eff1695e581b13a22d2ee530114df76d93dd81949f"
+}

@@ -43,6 +43,8 @@ def main():
     assert data == provenance['media']
     for asset in provenance['files']:
         assert hashlib.sha256((DOCS / asset['asset']).read_bytes()).hexdigest() == asset['sha256']
+    method = json.loads((DOCS / 'assets/method-provenance.json').read_text())
+    assert hashlib.sha256((DOCS / 'assets' / method['asset']).read_bytes()).hexdigest() == method['sha256']
     for pair in data['videos']:
         streams = []
         for side in pair['sides']:
