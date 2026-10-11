@@ -25,6 +25,8 @@ def main():
         ('fig2_legend_review_20261008.pdf', 'consistency-force.webp', (.51, 0, 1, 1)),
         ('fig3_review_20261008_v2.pdf', 'ema-restoration.webp', (.295, .115, .555, .89)),
         ('DiffusionART_method_overview_time_fixed_20260928.pdf', 'aggregation-first.webp', (0, 0, 1, 1)),
+        ('DiffusionART_method_overview_time_fixed_20260928.pdf', 'aggregation-force.webp', (0, 0, .495, 1)),
+        ('DiffusionART_method_overview_time_fixed_20260928.pdf', 'aggregation-states.webp', (.5, 0, 1, 1)),
         ('diffusionart_cover_base_model_20261008.pdf', 'video-efficiency.webp', (0, 0, .387, 1)),
     ]
     records = []

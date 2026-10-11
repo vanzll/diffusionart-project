@@ -14,6 +14,7 @@
   let pairedPlayback = false;
   let correcting = false;
   let loadingTimeout;
+  let readinessController;
 
   if (!data?.videos?.length || !data?.images?.length) {
     status.textContent = 'Media catalog unavailable.';
@@ -33,6 +34,7 @@
     playRequested = false;
     pairedPlayback = false;
     clearTimeout(loadingTimeout);
+    readinessController?.abort();
     videos.forEach(video => video.pause());
     setPlayControl(false);
     status.textContent = '';
@@ -43,6 +45,8 @@
     pausePair();
     const token = generation;
     playRequested = true;
+    readinessController = new AbortController();
+    const signal = readinessController.signal;
     setPlayControl(true);
     status.textContent = 'Loading videos...';
     loadingTimeout = setTimeout(() => {
@@ -52,7 +56,15 @@
     }, 15000);
     try {
       const position = restart || videos.some(video => video.ended) ? 0 : before.currentTime;
-      videos.forEach(video => { video.currentTime = position; });
+      videos.forEach(video => {
+        video.preload = 'auto';
+        if (video.readyState === 0) video.load();
+      });
+      await Promise.all(videos.map(video => waitForReady(video, signal)));
+      if (token !== generation) return;
+      videos.forEach(video => { if (video.currentTime !== position) video.currentTime = position; });
+      await Promise.all(videos.map(video => waitForReady(video, signal)));
+      if (token !== generation) return;
       await Promise.all(videos.map(video => video.play()));
       if (token !== generation) return;
       clearTimeout(loadingTimeout);
@@ -63,6 +75,29 @@
       pausePair();
       status.textContent = 'Playback unavailable.';
     }
+  }
+
+  function waitForReady(video, signal) {
+    if (signal.aborted) return Promise.reject(new Error('Playback cancelled'));
+    if (video.readyState >= 3 && !video.seeking) return Promise.resolve();
+    return new Promise((resolve, reject) => {
+      const cleanup = () => {
+        video.removeEventListener('canplay', ready);
+        video.removeEventListener('seeked', ready);
+        video.removeEventListener('error', failed);
+        signal.removeEventListener('abort', cancelled);
+      };
+      const ready = () => {
+        if (video.readyState >= 3 && !video.seeking) { cleanup(); resolve(); }
+      };
+      const failed = () => { cleanup(); reject(new Error('Video unavailable')); };
+      const cancelled = () => { cleanup(); reject(new Error('Playback cancelled')); };
+      video.addEventListener('canplay', ready);
+      video.addEventListener('seeked', ready);
+      video.addEventListener('error', failed);
+      signal.addEventListener('abort', cancelled, { once:true });
+      ready();
+    });
   }
 
   function buttons(containerId, entries, select) {
@@ -99,7 +134,7 @@
     });
     document.getElementById('video-prompt').textContent = entry.text;
     document.getElementById('video-details').textContent =
-      `HunyuanVideo-13B | prompt index ${entry.index} | 53 frames, 640 x 640, 8 FPS. DiffusionART: released Hugging Face model, revision ${entry.model_revision}. Pretrained: archived reference for the same prompt; inference paths are not identical-noise comparisons.`;
+      `HunyuanVideo-13B | prompt index ${entry.index} | 53 frames, 640 x 640, 8 FPS | HF revision ${entry.model_revision}.`;
   }
 
   function selectImage(entry) {
@@ -156,6 +191,13 @@
   playButton.addEventListener('click', () => playRequested ? pausePair() : playPair());
   replayButton.addEventListener('click', () => playPair(true));
   videos.forEach(video => {
+    video.addEventListener('waiting', () => {
+      if (!pairedPlayback) return;
+      const position = Math.min(before.currentTime, after.currentTime);
+      pausePair();
+      videos.forEach(item => { item.currentTime = position; });
+      playPair();
+    });
     video.addEventListener('ended', pausePair);
     video.addEventListener('error', () => {
       pausePair();
