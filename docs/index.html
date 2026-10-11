@@ -56,7 +56,19 @@
       <div class="section-heading"><h2>Change the order. Remove the force.</h2><p>Aggregate endpoints and rewards <em>before</em> regression, then reuse a frozen target.</p></div>
       <figure class="method-figure"><a class="method-desktop" href="assets/aggregation-first.webp"><img src="assets/aggregation-first.webp" width="2200" height="623" loading="lazy" alt="DiffusionART aggregates endpoint reward covariance, normalizes once, and shares this direction across states of reverse ODE trajectories."></a><div class="method-mobile"><a href="assets/aggregation-force.webp"><img src="assets/aggregation-force.webp" width="1089" height="623" loading="lazy" alt="Aggregation-first guidance removes the hidden consistency force."></a><a href="assets/aggregation-states.webp"><img src="assets/aggregation-states.webp" width="1100" height="623" loading="lazy" alt="Endpoint reward covariance is normalized once and shared across reverse-rollout states."></a></div></figure>
       <div class="method-details">
-        <article><h3>One direction for each prompt</h3><p>Reward–endpoint covariance supplies shared guidance on the states actually visited by the reverse sampler. Normalize <strong>after aggregation</strong>, rather than relying on samplewise forces to cancel.</p><div class="equation compact"><math display="block" aria-label="For nonzero covariance, G of c equals covariance of R and x zero given c divided by its root mean square"><mrow><mi>G</mi><mo>(</mo><mi>c</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mover><mi mathvariant="normal">Cov</mi><mo>¯</mo></mover><mo>(</mo><mi>R</mi><mo>,</mo><msub><mi>x</mi><mn>0</mn></msub><mo>∣</mo><mi>c</mi><mo>)</mo></mrow><mrow><mi mathvariant="normal">RMS</mi><mo>(</mo><mover><mi mathvariant="normal">Cov</mi><mo>¯</mo></mover><mo>)</mo></mrow></mfrac></mrow></math><p class="equation-condition">For nonzero covariance; otherwise G(c) = 0.</p></div><p class="figure-note">R is reward, x₀ a clean latent endpoint, and c the prompt. The covariance is estimated over its K samples.</p></article>
+        <article>
+          <h3>One direction for each prompt</h3>
+          <p>Reward–endpoint covariance supplies shared guidance on the states actually visited by the reverse sampler. Normalize <strong>after aggregation</strong>, rather than relying on samplewise forces to cancel.</p>
+          <div class="equation compact">
+            <math display="block" aria-label="For nonzero covariance, G of c equals covariance of R and x zero given c divided by its root mean square">
+              <mrow><mi>G</mi><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo><mo>=</mo>
+                <mfrac><mrow><mover><mi mathvariant="normal">Cov</mi><mo>¯</mo></mover><mo>(</mo><mi>R</mi><mo>,</mo><msub><mi>x</mi><mn>0</mn></msub><mo>∣</mo><mi>c</mi><mo>)</mo></mrow><mrow><mi mathvariant="normal">RMS</mi><mo>(</mo><mover><mi mathvariant="normal">Cov</mi><mo>¯</mo></mover><mo>)</mo></mrow></mfrac>
+              </mrow>
+            </math>
+            <p class="equation-condition">For nonzero covariance; otherwise G(c) = 0.</p>
+          </div>
+          <p class="figure-note">R is reward, x₀ a clean latent endpoint, and c the prompt. The covariance is estimated over its K samples.</p>
+        </article>
         <article><h3>Two updates. One frozen target.</h3><p>Fit <span class="inline-math">v<sub>old</sub> + G</span> on two disjoint minibatches. The first update follows guidance; the second also restores the model in proportion to its output drift.</p><div class="update-directions"><div><span>First update</span><math aria-label="First update descent direction G"><mi>G</mi></math></div><div><span>Second update</span><math aria-label="Second update descent direction G minus d"><mi>G</mi><mo>−</mo><mi>d</mi></math></div></div><p class="figure-note">Directions in output space, up to the MSE scale and state weight; d = v<sub>θ</sub> − v<sub>old</sub>. A trust-region mask suppresses excessive outward updates.</p><p class="method-bottomline">No differentiable reward model.<br>No EMA schedule to tune.</p></article>
       </div>
     </div></section>
