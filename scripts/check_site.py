@@ -41,6 +41,12 @@ def main():
     data = json.loads(source.removeprefix('window.PROJECT_MEDIA = ').removesuffix(';\n'))
     provenance = json.loads((DOCS / 'assets/provenance.json').read_text())
     assert data == provenance['media']
+    if 'video_selection' in provenance:
+        assert [pair['index'] for pair in data['videos']] == provenance['video_selection']['indices']
+        assert len(data['videos']) == 20
+        assert provenance['video_selection']['optimized_gallery_column'] == 3
+        assert provenance['video_selection']['pretrained_gallery_column'] == 1
+        assert all('seed' not in pair for pair in data['videos'])
     for asset in provenance['files']:
         assert hashlib.sha256((DOCS / asset['asset']).read_bytes()).hexdigest() == asset['sha256']
     method = json.loads((DOCS / 'assets/method-provenance.json').read_text())

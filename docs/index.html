@@ -7,13 +7,13 @@
   <meta name="description" content="DiffusionART: efficient, stable and scalable diffusion reinforcement through aggregation-first reward tilting and adaptive restoration.">
   <meta property="og:title" content="DiffusionART">
   <meta property="og:description" content="Efficient, Stable and Scalable Reinforcement of Diffusion Model">
-  <meta property="og:image" content="https://vanzll.github.io/diffusionart-project/assets/video-139-after.jpg">
+  <meta property="og:image" content="https://vanzll.github.io/diffusionart-project/assets/hf-video-00139-after.jpg">
   <meta property="og:url" content="https://vanzll.github.io/diffusionart-project/">
   <link rel="canonical" href="https://vanzll.github.io/diffusionart-project/">
   <title>DiffusionART | Efficient diffusion reinforcement</title>
-  <link rel="stylesheet" href="style.css?v=research-v3">
-  <script src="media.js" defer></script>
-  <script src="app.js?v=research-v3" defer></script>
+  <link rel="stylesheet" href="style.css?v=research-v4">
+  <script src="media.js?v=hf-demo-v1" defer></script>
+  <script src="app.js?v=research-v4" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -32,9 +32,9 @@
     <section class="teaser wrap" aria-label="Selected DiffusionART generations">
       <div class="teaser-toolbar"><span>Selected text-to-video generations</span><button id="play-showcase" class="icon-button" type="button" aria-label="Play showcase videos" title="Play showcase videos"><img src="assets/play.svg" width="16" height="16" alt=""></button></div>
       <div class="showcase-reel">
-        <figure><video class="showcase-video" controls loop muted playsinline preload="none" poster="assets/video-113-after.jpg" src="assets/video-113-after.mp4" aria-label="DiffusionART: white horse on a sunlit beach"></video><figcaption>A white horse gallops along a sunlit beach.</figcaption></figure>
-        <figure><video class="showcase-video" controls loop muted playsinline preload="none" poster="assets/video-139-after.jpg" src="assets/video-139-after.mp4" aria-label="DiffusionART: glass pavilion among autumn trees"></video><figcaption>A glass pavilion surrounded by autumn trees.</figcaption></figure>
-        <figure><video class="showcase-video" controls loop muted playsinline preload="none" poster="assets/video-144-after.jpg" src="assets/video-144-after.mp4" aria-label="DiffusionART: floating island with waterfalls"></video><figcaption>A floating island above a sea of clouds.</figcaption></figure>
+        <figure><video class="showcase-video" controls loop muted playsinline preload="none" poster="assets/hf-video-00113-after.jpg" src="assets/hf-video-00113-after.mp4" aria-label="DiffusionART: white horse on a sunlit beach"></video><figcaption>A white horse gallops along a sunlit beach.</figcaption></figure>
+        <figure><video class="showcase-video" controls loop muted playsinline preload="none" poster="assets/hf-video-00139-after.jpg" src="assets/hf-video-00139-after.mp4" aria-label="DiffusionART: glass pavilion among autumn trees"></video><figcaption>A glass pavilion surrounded by autumn trees.</figcaption></figure>
+        <figure><video class="showcase-video" controls loop muted playsinline preload="none" poster="assets/hf-video-00148-after.jpg" src="assets/hf-video-00148-after.mp4" aria-label="DiffusionART: rotating crystal prism"></video><figcaption>Sunlight sparkles through a rotating crystal prism.</figcaption></figure>
       </div>
       <p id="showcase-status" role="status" class="media-status" aria-live="polite"></p>
     </section>
@@ -78,8 +78,8 @@
       <div class="video-pair"><figure><figcaption>Pretrained</figcaption><video id="video-before" controls playsinline muted preload="none" aria-label="Pretrained video"></video></figure><figure><figcaption class="art-label">DiffusionART</figcaption><video id="video-after" controls playsinline muted preload="none" aria-label="DiffusionART video"></video></figure></div>
       <p id="video-status" class="media-status" role="status" aria-live="polite"></p><div id="video-choices" class="choices" role="group" aria-label="Video example"></div><details class="provenance"><summary>Video details</summary><p id="video-details"></p></details>
       <div class="image-gallery"><div class="gallery-heading"><h3>Text to image</h3><span id="image-benchmark" class="benchmark"></span></div><p id="image-prompt" class="prompt"></p><div class="image-pair"><figure><figcaption>Pretrained</figcaption><img id="image-before" alt="Pretrained image" loading="lazy" width="512" height="512"></figure><figure><figcaption class="art-label">DiffusionART</figcaption><img id="image-after" alt="DiffusionART image" loading="lazy" width="512" height="512"></figure></div><div id="image-choices" class="choices" role="group" aria-label="Image example"></div><details class="provenance"><summary>Image details</summary><p id="image-details"></p></details></div>
-      <p class="selection-note">Selected evaluation examples. Video pairs share prompts, seeds and sampling settings. <a href="assets/provenance.json">Media provenance</a></p>
-      <noscript><p><a href="assets/video-94-before.mp4">Pretrained video</a> · <a href="assets/video-94-after.mp4">DiffusionART video</a></p></noscript>
+      <p class="selection-note">Selected HF model generations alongside archived pretrained references for the same prompts; the inference paths are not identical-noise comparisons. <a href="assets/provenance.json">Media provenance</a></p>
+      <noscript><p><a href="assets/hf-video-00113-before.mp4">Pretrained video</a> · <a href="assets/hf-video-00113-after.mp4">DiffusionART video</a></p></noscript>
     </div></section>
     <section class="release wrap" id="code"><h2>Resources</h2><div class="resource-list"><a href="https://github.com/vanzll/DiffusionART"><img src="assets/code-xml.svg" alt="" width="20" height="20"><span>Code<span class="resource-address">github.com/vanzll/DiffusionART</span></span></a><a href="mailto:vanzl@u.nus.edu"><span>Contact<span class="resource-address">vanzl@u.nus.edu</span></span></a></div></section>
   </main>

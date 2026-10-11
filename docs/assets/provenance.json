@@ -2,116 +2,422 @@
   "media": {
     "videos": [
       {
-        "index": 94,
-        "text": "a mad ocean, boat is sinking",
-        "seed": 406,
-        "run": "7l6xk2na",
-        "label": "Ocean",
+        "index": 100,
+        "text": "Ocean waves roll onto a black sand beach beneath towering green cliffs.",
+        "label": "Black sand",
+        "prompt_id": "c94fb2e4bf8237c2919af9368cd15aa71170948a46845e803cd67e0229c4e2a0",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
         "sides": [
           {
             "step": 0,
-            "video": "assets/video-94-before.mp4",
-            "poster": "assets/video-94-before.jpg"
-          },
-          {
-            "step": 10,
-            "video": "assets/video-94-after.mp4",
-            "poster": "assets/video-94-after.jpg"
-          }
-        ]
-      },
-      {
-        "index": 113,
-        "text": "A white horse gallops through shallow water along a sunlit beach.",
-        "seed": 425,
-        "run": "7l6xk2na",
-        "label": "Coast",
-        "sides": [
-          {
-            "step": 0,
-            "video": "assets/video-113-before.mp4",
-            "poster": "assets/video-113-before.jpg"
-          },
-          {
-            "step": 20,
-            "video": "assets/video-113-after.mp4",
-            "poster": "assets/video-113-after.jpg"
-          }
-        ]
-      },
-      {
-        "index": 136,
-        "text": "A steam train crosses a stone viaduct through green hills.",
-        "seed": 448,
-        "run": "7l6xk2na",
-        "label": "Viaduct",
-        "sides": [
-          {
-            "step": 0,
-            "video": "assets/video-136-before.mp4",
-            "poster": "assets/video-136-before.jpg"
+            "video": "assets/hf-video-00100-before.mp4",
+            "poster": "assets/hf-video-00100-before.jpg"
           },
           {
             "step": 30,
-            "video": "assets/video-136-after.mp4",
-            "poster": "assets/video-136-after.jpg"
+            "video": "assets/hf-video-00100-after.mp4",
+            "poster": "assets/hf-video-00100-after.jpg"
           }
         ]
       },
       {
-        "index": 139,
-        "text": "The camera approaches a glass pavilion surrounded by autumn trees.",
-        "seed": 451,
-        "run": "7l6xk2na",
-        "label": "Architecture",
+        "index": 101,
+        "text": "A waterfall pours into a turquoise pool surrounded by a lush rainforest.",
+        "label": "Waterfall",
+        "prompt_id": "8e94b3453897de3379b07673fb077444bf2ff7ed65a9be435e38f425a01094b4",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
         "sides": [
           {
             "step": 0,
-            "video": "assets/video-139-before.mp4",
-            "poster": "assets/video-139-before.jpg"
+            "video": "assets/hf-video-00101-before.mp4",
+            "poster": "assets/hf-video-00101-before.jpg"
           },
           {
-            "step": 20,
-            "video": "assets/video-139-after.mp4",
-            "poster": "assets/video-139-after.jpg"
+            "step": 30,
+            "video": "assets/hf-video-00101-after.mp4",
+            "poster": "assets/hf-video-00101-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 102,
+        "text": "Sunlight breaks through drifting mist above a quiet alpine lake.",
+        "label": "Alpine lake",
+        "prompt_id": "f9e28bd520d9ba63d66051cf9df0a5299ba19f9c780aeea9f8f0dcd61316888c",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00102-before.mp4",
+            "poster": "assets/hf-video-00102-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00102-after.mp4",
+            "poster": "assets/hf-video-00102-after.jpg"
           }
         ]
       },
       {
         "index": 106,
         "text": "The camera follows a winding river through a valley of autumn trees.",
-        "seed": 418,
-        "run": "7l6xk2na",
-        "label": "Autumn",
+        "label": "Autumn river",
+        "prompt_id": "9858d5e22259831e834fc4d3bcc3dedf21528795159d4b381465da0b3873a243",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
         "sides": [
           {
             "step": 0,
-            "video": "assets/video-106-before.mp4",
-            "poster": "assets/video-106-before.jpg"
+            "video": "assets/hf-video-00106-before.mp4",
+            "poster": "assets/hf-video-00106-before.jpg"
           },
           {
-            "step": 20,
-            "video": "assets/video-106-after.mp4",
-            "poster": "assets/video-106-after.jpg"
+            "step": 30,
+            "video": "assets/hf-video-00106-after.mp4",
+            "poster": "assets/hf-video-00106-after.jpg"
           }
         ]
       },
       {
-        "index": 144,
-        "text": "A floating island drifts above a sea of clouds, with waterfalls spilling from its edges.",
-        "seed": 456,
-        "run": "7l6xk2na",
-        "label": "Fantasy",
+        "index": 108,
+        "text": "Clouds drift past jagged mountain peaks reflected in a still lake.",
+        "label": "Mountain peaks",
+        "prompt_id": "ebc0624bebb80950f5f9e32ffe85b98bcad9c4f6c72de9bf7826fd48d6156b8b",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
         "sides": [
           {
             "step": 0,
-            "video": "assets/video-144-before.mp4",
-            "poster": "assets/video-144-before.jpg"
+            "video": "assets/hf-video-00108-before.mp4",
+            "poster": "assets/hf-video-00108-before.jpg"
           },
           {
-            "step": 10,
-            "video": "assets/video-144-after.mp4",
-            "poster": "assets/video-144-after.jpg"
+            "step": 30,
+            "video": "assets/hf-video-00108-after.mp4",
+            "poster": "assets/hf-video-00108-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 111,
+        "text": "Rain falls on lotus leaves as ripples spread across a garden pond.",
+        "label": "Lotus pond",
+        "prompt_id": "7c8f38b6803c10bf2314d0029c5f52108cf1cfc1e03cf80a6a978c5aeb0454b8",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00111-before.mp4",
+            "poster": "assets/hf-video-00111-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00111-after.mp4",
+            "poster": "assets/hf-video-00111-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 113,
+        "text": "A white horse gallops through shallow water along a sunlit beach.",
+        "label": "White horse",
+        "prompt_id": "433529279235721be675e36cb496df15422aeb00a9d52dc1d13ca96d6a54397c",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00113-before.mp4",
+            "poster": "assets/hf-video-00113-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00113-after.mp4",
+            "poster": "assets/hf-video-00113-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 115,
+        "text": "A sea turtle swims over a colorful coral reef in clear blue water.",
+        "label": "Coral reef",
+        "prompt_id": "29872013bef387aad4f9b7a3fb965a9d6ca6db34ed802c610e3e49901bc4bbfe",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00115-before.mp4",
+            "poster": "assets/hf-video-00115-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00115-after.mp4",
+            "poster": "assets/hf-video-00115-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 120,
+        "text": "A deer walks through a sunlit forest as fallen leaves drift to the ground.",
+        "label": "Forest deer",
+        "prompt_id": "44f25f097bda32f5b55fe3b5ee3cedde7a7ee335fb7037ff98d730e2f00e44be",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00120-before.mp4",
+            "poster": "assets/hf-video-00120-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00120-after.mp4",
+            "poster": "assets/hf-video-00120-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 121,
+        "text": "A flock of flamingos takes flight above a pink salt lake.",
+        "label": "Flamingos",
+        "prompt_id": "8bc45f454bff87c0c9370ea3060b06d16393f22b148e76cd9943df2e9e54ab15",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00121-before.mp4",
+            "poster": "assets/hf-video-00121-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00121-after.mp4",
+            "poster": "assets/hf-video-00121-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 125,
+        "text": "A violinist plays beside an open window as sheer curtains sway.",
+        "label": "Violinist",
+        "prompt_id": "6add762d2187d435cbea770d7de8a7612e4d0f9366166bc13b6bfa0e94971013",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00125-before.mp4",
+            "poster": "assets/hf-video-00125-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00125-after.mp4",
+            "poster": "assets/hf-video-00125-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 126,
+        "text": "A surfer rides a turquoise wave beneath a clear blue sky.",
+        "label": "Surfer",
+        "prompt_id": "d82dff1d6609de2af3b5ec581f1b49ea96fb1461bbe84e8d35ccaa388a6d0af3",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00126-before.mp4",
+            "poster": "assets/hf-video-00126-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00126-after.mp4",
+            "poster": "assets/hf-video-00126-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 129,
+        "text": "A chef pours hot tea into a glass cup as steam rises.",
+        "label": "Tea",
+        "prompt_id": "5427ce41562d780389956e2125bd3ade4c363228f88ec961fbce6fe5fad927ee",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00129-before.mp4",
+            "poster": "assets/hf-video-00129-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00129-after.mp4",
+            "poster": "assets/hf-video-00129-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 131,
+        "text": "A painter adds a blue brushstroke to a canvas in a sunlit studio.",
+        "label": "Painter",
+        "prompt_id": "a8d2c2e54ebb44f9a676cc9b71d4e27923b9fd06f980702e1a8890c107e38cde",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00131-before.mp4",
+            "poster": "assets/hf-video-00131-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00131-after.mp4",
+            "poster": "assets/hf-video-00131-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 132,
+        "text": "A gondola glides beneath a stone bridge along a quiet Venetian canal.",
+        "label": "Venice",
+        "prompt_id": "3b4c970dce83eede0bb02bab92505d739ee9847ce3a5ad078329f9bfbead03bf",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00132-before.mp4",
+            "poster": "assets/hf-video-00132-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00132-after.mp4",
+            "poster": "assets/hf-video-00132-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 135,
+        "text": "The camera rises above white houses overlooking the blue Mediterranean Sea.",
+        "label": "Mediterranean",
+        "prompt_id": "a48a011bae995c1e8612de72636915bccb3978faf4164d52d98f7c039fc878ad",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00135-before.mp4",
+            "poster": "assets/hf-video-00135-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00135-after.mp4",
+            "poster": "assets/hf-video-00135-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 137,
+        "text": "The camera glides through a sunlit courtyard with arches and a flowing fountain.",
+        "label": "Courtyard",
+        "prompt_id": "bfacc0e276a1cb1271c17be1264d5255ff6f01add07ce768ad7a75cd19a030a5",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00137-before.mp4",
+            "poster": "assets/hf-video-00137-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00137-after.mp4",
+            "poster": "assets/hf-video-00137-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 139,
+        "text": "The camera approaches a glass pavilion surrounded by autumn trees.",
+        "label": "Glass pavilion",
+        "prompt_id": "a2a3949f48cb46179520da3c4a7a90da5f0aca9ca1394f3bc8c00bd0972e121c",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00139-before.mp4",
+            "poster": "assets/hf-video-00139-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00139-after.mp4",
+            "poster": "assets/hf-video-00139-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 142,
+        "text": "A paper boat sails across a miniature ocean inside a glass bowl.",
+        "label": "Paper boat",
+        "prompt_id": "b3485d42bdf7c7ebc356f68997e2d8bf9560ac8c1efba19de34cd22c2d10f4d8",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00142-before.mp4",
+            "poster": "assets/hf-video-00142-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00142-after.mp4",
+            "poster": "assets/hf-video-00142-after.jpg"
+          }
+        ]
+      },
+      {
+        "index": 148,
+        "text": "Sunlight sparkles through a rotating crystal prism on a white surface.",
+        "label": "Crystal prism",
+        "prompt_id": "716730c4e049b88aaf0cbf55485c2ba9650cd6089b8668fc0744d5c4972a72d9",
+        "model_id": "vanzl/DiffusionART-HunyuanVideo-7-2-1",
+        "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf",
+        "run": "tk1w4go1",
+        "sides": [
+          {
+            "step": 0,
+            "video": "assets/hf-video-00148-before.mp4",
+            "poster": "assets/hf-video-00148-before.jpg"
+          },
+          {
+            "step": 30,
+            "video": "assets/hf-video-00148-after.mp4",
+            "poster": "assets/hf-video-00148-after.jpg"
           }
         ]
       }
@@ -223,114 +529,6 @@
   },
   "files": [
     {
-      "asset": "assets/video-94-before.mp4",
-      "sha256": "65757b884e52c377af966b4369de3682fd1818ace43bc2359603214ead7b49de"
-    },
-    {
-      "asset": "assets/video-94-before.jpg",
-      "sha256": "2361f88e4176049063423f95311a5082b9ab3dec28a5e4810f5ef8766f4b4b21",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-94-after.mp4",
-      "sha256": "11e6c95a5aba5ba4e33c62bd3880ea214e20096e435ad003894a47adc07ca56d"
-    },
-    {
-      "asset": "assets/video-94-after.jpg",
-      "sha256": "ba583c62387fc9d283de5bbe3795dfead988c4a5d87cc3d78b98d4028af07c01",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-113-before.mp4",
-      "sha256": "4c484efff6af258fd58f2b921ab2c28b97ee3dae434f66d304f2a728ea5baf46"
-    },
-    {
-      "asset": "assets/video-113-before.jpg",
-      "sha256": "eadc07a28cd81b25e1e05aa538c272ef01a64594c4b97962add8909292be7343",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-113-after.mp4",
-      "sha256": "e34968eed43af86a6a45e9765b3d313f69c334e7924d006854f1b05c4c6d8d19"
-    },
-    {
-      "asset": "assets/video-113-after.jpg",
-      "sha256": "0953a02171b325aacf36eb0ba3a98026430d4860b7a0d5bb4a8705a19ae01be1",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-136-before.mp4",
-      "sha256": "fb754ac32c8c87f0adb2011cc706572ee3853da6ba9d187ba549e22693398a55"
-    },
-    {
-      "asset": "assets/video-136-before.jpg",
-      "sha256": "a28f546df74f10d3be5540d07ecbdec87422b6c3cc4d114a62bf78f9180680cc",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-136-after.mp4",
-      "sha256": "69a4a558410605654780a7dc35d0e8c7ef7d1e70efbe5785a34b011eb34ffaa7"
-    },
-    {
-      "asset": "assets/video-136-after.jpg",
-      "sha256": "27ce16cefd068af5e37319cfabdcc19bf6b4e8cd4025e46969b366b6ccb90902",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-139-before.mp4",
-      "sha256": "10568caf9e89d2bce3ef375e09bae47bf45caa14a928fbd26375087b5923318b"
-    },
-    {
-      "asset": "assets/video-139-before.jpg",
-      "sha256": "c6d3c3a758367cbe3e370ff8e6803cec290d6d102416841a92a48e0a9aaf178b",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-139-after.mp4",
-      "sha256": "cd681b7b956aec8440ed448e06782829b1a90f2ccc1c53962948e9f81e6401b2"
-    },
-    {
-      "asset": "assets/video-139-after.jpg",
-      "sha256": "41e4e78b9eff48eb33ee2127af89155f646e3f4fb52fe31eeed9cea6e5c1b715",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-106-before.mp4",
-      "sha256": "e46c85cec8c7fc1fd9b9e4a4c2e1ebba19aaf31a8249f84f049615ca31d78e47"
-    },
-    {
-      "asset": "assets/video-106-before.jpg",
-      "sha256": "680ba2b3bf0d48c8edcdaaff9f90d4256a309bfa4f2f32df307ae2f3faa23afb",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-106-after.mp4",
-      "sha256": "d78ca3d0685f1086db3835acb7c64dbfeb9a755c4774a639d1b7d1af511f3a3a"
-    },
-    {
-      "asset": "assets/video-106-after.jpg",
-      "sha256": "c31808f70b5d2aa5bed4802fd63e51adc71bd253b84763c9dfee6b5408fb4277",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-144-before.mp4",
-      "sha256": "858253d5a9c783bdf3be9e20fa638fb9d943af31481d1d38a003743ae518416e"
-    },
-    {
-      "asset": "assets/video-144-before.jpg",
-      "sha256": "e34217270ae7b9d1b484522d6b1876a542c315d58a40ec1f4a5abfb1bde81712",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
-      "asset": "assets/video-144-after.mp4",
-      "sha256": "36f79c0bbb317f033e084b3fb5a286e6a6ffcf72c8780c258b8a0f300357063e"
-    },
-    {
-      "asset": "assets/video-144-after.jpg",
-      "sha256": "cd0da33627ec496144ad5a08d2e446be014d0afdbaa40a616c13466f588d5891",
-      "transform": "JPEG poster, full frame, quality 92"
-    },
-    {
       "asset": "assets/hero.jpg",
       "sha256": "9a3458bb3892c0c0664993082d540a0633dafc9e2cdf2d9bae29b57020c055d4",
       "transform": "JPEG poster, full frame, quality 92"
@@ -398,9 +596,396 @@
     {
       "asset": "assets/i2v.png",
       "sha256": "05276e663f9b055bc6a404d84bd7a247bc83adfeef22a3db1f8ef96c19ca7b4d"
+    },
+    {
+      "asset": "assets/hf-video-00100-before.mp4",
+      "sha256": "b4dad71e3119de7f4bf21d86523b6cb7cecc8e2b97439655568891ad27da0026"
+    },
+    {
+      "asset": "assets/hf-video-00100-before.jpg",
+      "sha256": "0b212a9d29a6f14242ad62b53677cfd277f5b4839336917c36cbbee7ddf500ec",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00100-after.mp4",
+      "sha256": "961b17cb9eb67be97f3ad3494796e9f4ab7f028a83c57bf547ca26bc570e7cf9"
+    },
+    {
+      "asset": "assets/hf-video-00100-after.jpg",
+      "sha256": "0f33388f89bf69fcbe1ff6b36ef9105ff2aeb61b8bf0720d165fd3f9290a19ba",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00101-before.mp4",
+      "sha256": "6816038206d407499e6d6d6d8ed63c69ff0adef1bceea3f6f5da8756c46bdc25"
+    },
+    {
+      "asset": "assets/hf-video-00101-before.jpg",
+      "sha256": "e9844099a3dded3ddb92e23d3bf0a1721de049735c8decb953aca8421fdadde5",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00101-after.mp4",
+      "sha256": "f2df55a2fd9b73fcd99444c148041b363e5a9f4435627faf585075d2547f1b77"
+    },
+    {
+      "asset": "assets/hf-video-00101-after.jpg",
+      "sha256": "4bc59c284286a01a6d2597a8b5f38011c6482a91b4e2de25731e1f3504733cf0",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00102-before.mp4",
+      "sha256": "258bce45d65c9fe2660e9380af0cc48328f209630b9f6842c8c4b2f17ab0a992"
+    },
+    {
+      "asset": "assets/hf-video-00102-before.jpg",
+      "sha256": "ffff73427ed0e6eb7f3c45eeadaac93033c6e20f689cec7e38061019f46ab2eb",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00102-after.mp4",
+      "sha256": "9b4ba04d61228e6c54de06d393275807ccc985ad22c3fc927f5952f41837dbec"
+    },
+    {
+      "asset": "assets/hf-video-00102-after.jpg",
+      "sha256": "215f3ef7c82d2f5317b85f62695d9bd764430b08e94caf363b35e3fcad3bc284",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00106-before.mp4",
+      "sha256": "e46c85cec8c7fc1fd9b9e4a4c2e1ebba19aaf31a8249f84f049615ca31d78e47"
+    },
+    {
+      "asset": "assets/hf-video-00106-before.jpg",
+      "sha256": "283f143eaeb1cc32c80262908b7c3bb557118981c9952929ac4497c47c31717b",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00106-after.mp4",
+      "sha256": "333f736b191064a525ee01064d5e2b1e8a24769ce0e72f79c9fb273059ae9e4a"
+    },
+    {
+      "asset": "assets/hf-video-00106-after.jpg",
+      "sha256": "ff9206987ae7316fb69f669a5ca0b02c27fefd5242339dc29fb8e6a2f75bafe0",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00108-before.mp4",
+      "sha256": "491abe8796dbb0a49939577b68f50a4b715aa33df5e010f4c470c81eafed0ec8"
+    },
+    {
+      "asset": "assets/hf-video-00108-before.jpg",
+      "sha256": "5f7a3f4903591ff8a6ea0a24853e189276426d95d4e2aa6395dfdf156f19b16d",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00108-after.mp4",
+      "sha256": "2f5f66d77f3e2796971023b228289769b0e7964727a1562b17b3e2ac120af118"
+    },
+    {
+      "asset": "assets/hf-video-00108-after.jpg",
+      "sha256": "c0f2f0431dda5a5d2de10bfb920ea1b6a3e7e131acdfe4a52a89aa2e3b33f750",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00111-before.mp4",
+      "sha256": "e842cf18392011d302c3a7e564b089f18a0db279cf4f3e942cf5add4ee3e84c2"
+    },
+    {
+      "asset": "assets/hf-video-00111-before.jpg",
+      "sha256": "1bed22e90e32bd7a2586c45057d5d1107d93405335c8c327714408c2f097482f",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00111-after.mp4",
+      "sha256": "bc77a3b20b75a6cf392d554ac94b2d4ffcde8b069bef332d4f71c1b93682c110"
+    },
+    {
+      "asset": "assets/hf-video-00111-after.jpg",
+      "sha256": "da7e9a3e76986e442a1d0070a448286300ecbec2556ce4ac08be16d111e10a64",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00113-before.mp4",
+      "sha256": "4c484efff6af258fd58f2b921ab2c28b97ee3dae434f66d304f2a728ea5baf46"
+    },
+    {
+      "asset": "assets/hf-video-00113-before.jpg",
+      "sha256": "cf484661eb418fb718d472bb6ad81f0686a679fbb2c31305508e730a61c87d1e",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00113-after.mp4",
+      "sha256": "211811a4ed7a76bf7081a077274661f820f8911d5654e35ac8081ac56a686de4"
+    },
+    {
+      "asset": "assets/hf-video-00113-after.jpg",
+      "sha256": "4e77add9a3532141a1e57aeff9c9b1ff1d6997c3d48e5338f9f7ae3e15a72861",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00115-before.mp4",
+      "sha256": "e39884d01b38a4863697a4a23cc7a6aceefd8e2464dd3e68406e22726497bf30"
+    },
+    {
+      "asset": "assets/hf-video-00115-before.jpg",
+      "sha256": "f340c9d0ebd26d9371f6c237823e1cafc87460de27feb3710b86ef51e56b7118",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00115-after.mp4",
+      "sha256": "7193b6a5b25f2c66df44aaf302fafe1abe0d18b0ed14e570e5c88ad43fae55b0"
+    },
+    {
+      "asset": "assets/hf-video-00115-after.jpg",
+      "sha256": "4899388d7596bb47bcf9c40d72f3e158b2c35bafea35089c1d484cb676e966e0",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00120-before.mp4",
+      "sha256": "0b231624e4bde3c96ad299aa9011beb8c05ba067a10ef79b5c67b7d172cd95ab"
+    },
+    {
+      "asset": "assets/hf-video-00120-before.jpg",
+      "sha256": "7a203a8a13be83fad70780586c215f658328a9dad5cce633d23b1a8d6c4a5c96",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00120-after.mp4",
+      "sha256": "9567bf7533faa9015e5c591cf6b7b251377c6684d23c0b82138bb66c7b95f27c"
+    },
+    {
+      "asset": "assets/hf-video-00120-after.jpg",
+      "sha256": "4cbb3f9f96e1d808495f699032250c0f20ca7b899398c07b90e7b66b0faec516",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00121-before.mp4",
+      "sha256": "bfd2f67c261f8595651ed1ddaf485b71056dbf7b54091778be01e0209ebd2b9a"
+    },
+    {
+      "asset": "assets/hf-video-00121-before.jpg",
+      "sha256": "73e42625f948a11f1a48a8e81a1de39b22ce8c77327c3c80e4c68fd4d5f9eeb6",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00121-after.mp4",
+      "sha256": "c8a79b483babb98bb7ea51a78a5ba4d00f152362a1ff6bdaec06eafa535b0690"
+    },
+    {
+      "asset": "assets/hf-video-00121-after.jpg",
+      "sha256": "58d2e5d0542289a88ac349b534f5ced4ba03df01f30382a4fb7f772febe05309",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00125-before.mp4",
+      "sha256": "454170f090bdb0251222aed1df52552b7f5ca54dc4385a472cc0e1052115d57a"
+    },
+    {
+      "asset": "assets/hf-video-00125-before.jpg",
+      "sha256": "038030f77381a102fcb527d4f27305c124b31783071839d8386dc89c382764db",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00125-after.mp4",
+      "sha256": "747f5ba40e23cae28915885c1c19104f3be142e8cdd3d05db329c46b178dbbfa"
+    },
+    {
+      "asset": "assets/hf-video-00125-after.jpg",
+      "sha256": "51af57e16b1016173c9e31cfb5a7945983a56ecd05473dfa6e43118219a1ddbe",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00126-before.mp4",
+      "sha256": "c071a1f4a5a16445081b3904e3d461ec15a5dce9b3757a42fc2ca56ed7676442"
+    },
+    {
+      "asset": "assets/hf-video-00126-before.jpg",
+      "sha256": "3ea74c079b8b14c4d6e0e515a4067d463b710e63a58045b471cb0784a0a4d8f1",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00126-after.mp4",
+      "sha256": "cf1faaf2797fc4e4240164b48ba9206e77bf01c0e9640039fa4c2317bac47438"
+    },
+    {
+      "asset": "assets/hf-video-00126-after.jpg",
+      "sha256": "86c6b7ea7cfa67f9a23cab0dc34d0b923a35b8873105270b750d7bc4dde70b3f",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00129-before.mp4",
+      "sha256": "f8ce3af9dcebb27e64599f8f93f490917b354cd460175951397b3df6bb0e8f3c"
+    },
+    {
+      "asset": "assets/hf-video-00129-before.jpg",
+      "sha256": "c6492a55137e1043ab2f3c262d6bac88ed707baf5276d5ecc5c0ce30e392372b",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00129-after.mp4",
+      "sha256": "7c8a32ca6471cd375c6dfb7482fc4ebd80a148eddaeb82ba7c82ef19cd18fa12"
+    },
+    {
+      "asset": "assets/hf-video-00129-after.jpg",
+      "sha256": "c64cb67c288820d1126fcc2610018bb83ab81c78c91afa1602808fc2b4c2d7cf",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00131-before.mp4",
+      "sha256": "7e222713c66632ee3470bc8e44a8a56d02adb0c0696946c70f05a5f898d87d39"
+    },
+    {
+      "asset": "assets/hf-video-00131-before.jpg",
+      "sha256": "961ac2f1e764654de761219a1918df53199c4736196ff3d4b022a472a010001e",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00131-after.mp4",
+      "sha256": "5024223e76b8e6c0a3e2f81ce5d19707b2d1c5e346660451bd90a0f18b85457c"
+    },
+    {
+      "asset": "assets/hf-video-00131-after.jpg",
+      "sha256": "cce7fb82534fffe7092ac890890e9fbc8f41db97c4f81ef1d41787ec8c4ce8bf",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00132-before.mp4",
+      "sha256": "956b47232d8347457272a46a62e14f29240a77538effff0a881ab6a8e8861959"
+    },
+    {
+      "asset": "assets/hf-video-00132-before.jpg",
+      "sha256": "c78a6a274b07a30be9f67d307f77c1f83b23ec24a690db51b5f6c4d93d5aa0a0",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00132-after.mp4",
+      "sha256": "e893dedecb12cfd639580b7973ecc51371b06c8d276f6f51818311d086cd69b2"
+    },
+    {
+      "asset": "assets/hf-video-00132-after.jpg",
+      "sha256": "53808840364b40fa1053d3d22624d904892f2d80af9e7eaa0c9e4f878954ef58",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00135-before.mp4",
+      "sha256": "4ccc442c6c3515211e52622e50e786b9d448cfc3e5cfd10ab04df2d35eddf3f6"
+    },
+    {
+      "asset": "assets/hf-video-00135-before.jpg",
+      "sha256": "69b9e8c60a0a469ee59cfbf3e07a4dfcadf5213c42b33b83b522adf9bbb4b74e",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00135-after.mp4",
+      "sha256": "23f8cfb1ba404a8b4a55a46298119357c92df57ff7fc3449d39a5ee13d032db4"
+    },
+    {
+      "asset": "assets/hf-video-00135-after.jpg",
+      "sha256": "7a90b0cc9689b98e4e23aa365101ad09d132cfa055a4dbc95bf17b98ff5073d4",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00137-before.mp4",
+      "sha256": "86036ac4397738a9b496a0208c5d92013b861eaa8fe5196c0369e9e3532c132b"
+    },
+    {
+      "asset": "assets/hf-video-00137-before.jpg",
+      "sha256": "c37cdc1c20b08d2bf55dad7d6cd348d76080f2b0235d893f5e8ce713cef5964d",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00137-after.mp4",
+      "sha256": "793d20cf0b0c4fdaf70a21c9d5c7322c6f8e39a6dc80981f4068e03998633edf"
+    },
+    {
+      "asset": "assets/hf-video-00137-after.jpg",
+      "sha256": "1d7dc689bce5ca13d03bb1ac8c281f9b5b9756ee7193738d08c8f4e99708c255",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00139-before.mp4",
+      "sha256": "10568caf9e89d2bce3ef375e09bae47bf45caa14a928fbd26375087b5923318b"
+    },
+    {
+      "asset": "assets/hf-video-00139-before.jpg",
+      "sha256": "0bd5b3aa364342fd7885ec5d9c1c9db86cb502fba5b9319f8d15fb9876ff19b1",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00139-after.mp4",
+      "sha256": "751614effb6579267d90c0d3c811c2b14236cb343ccccd8776d7de30555320f3"
+    },
+    {
+      "asset": "assets/hf-video-00139-after.jpg",
+      "sha256": "cbcf0e589d089f5d827f60cd2dcf299c36b4b1a8789cbb76d029ccf7a4b564e6",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00142-before.mp4",
+      "sha256": "752eb743a4aa03429512b6732986e0e70a7032d7c545985b7230b3c4b3a7311a"
+    },
+    {
+      "asset": "assets/hf-video-00142-before.jpg",
+      "sha256": "5e498cab7c2176812a473eedf7d864c0b9a5f7e02cf0c1a9bbb9c999ca330ec9",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00142-after.mp4",
+      "sha256": "bc75056971d6d8c2cbe2c996895e8476e77cd212d9d8ae52e353d81658f55b8c"
+    },
+    {
+      "asset": "assets/hf-video-00142-after.jpg",
+      "sha256": "65ee1f235819eca52a2613abadb6fc32e0a0eb4fa430d23b307c78cb303e5220",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00148-before.mp4",
+      "sha256": "dea5ccceca4c853efcc882d29826386ce22178816637a65ecec1972f266cb1c9"
+    },
+    {
+      "asset": "assets/hf-video-00148-before.jpg",
+      "sha256": "2d47715b9459dfbb9424084ef2118beedf5f4a89d500ffa5dcc6bb6801d75225",
+      "transform": "Full-frame JPEG preview, frame index 8"
+    },
+    {
+      "asset": "assets/hf-video-00148-after.mp4",
+      "sha256": "f0837beb2cd5815d34a7781877c690e71ddec89d08f32c490e53d873d5aa0aea"
+    },
+    {
+      "asset": "assets/hf-video-00148-after.jpg",
+      "sha256": "3fec6160e93d6a6cd426003a8a1acbc156db86a81a6153ef354da996a8b91ac3",
+      "transform": "Full-frame JPEG preview, frame index 8"
     }
   ],
-  "note": "Curated qualitative examples. Videos are byte-identical to the retained evaluations; images are original JPEGs. Posters are full-frame JPEG previews.",
-  "video_identity": "Same run, prompt, seed and sampling protocol within each pair.",
-  "image_identity": "Same prompt and logged media index. Per-image seeds are not asserted."
+  "note": "Author-selected HF inference videos and archived pretrained references. Original MP4 bytes are preserved. Posters are full-frame JPEG previews.",
+  "video_identity": "Archived pretrained reference vs published HF inference; same prompt, not an identical-noise protocol comparison.",
+  "image_identity": "Same prompt and logged media index. Per-image seeds are not asserted.",
+  "video_selection": {
+    "indices": [
+      100,
+      101,
+      102,
+      106,
+      108,
+      111,
+      113,
+      115,
+      120,
+      121,
+      125,
+      126,
+      129,
+      131,
+      132,
+      135,
+      137,
+      139,
+      142,
+      148
+    ],
+    "optimized_gallery_column": 3,
+    "pretrained_gallery_column": 1,
+    "model_revision": "06b4c625429270e08dca03e5819fbf76bae026bf"
+  }
 }

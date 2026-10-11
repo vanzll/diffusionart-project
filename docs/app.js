@@ -117,7 +117,7 @@
     });
     document.getElementById('video-prompt').textContent = entry.text;
     document.getElementById('video-details').textContent =
-      `HunyuanVideo-13B | run ${entry.run} | prompt index ${entry.index} | seed ${entry.seed} | steps ${entry.sides[0].step} and ${entry.sides[1].step} | 53 frames, 640 x 640, 8 FPS.`;
+      `HunyuanVideo-13B | prompt index ${entry.index} | 53 frames, 640 x 640, 8 FPS. DiffusionART video generated with the released HF model; pretrained video is an archived reference for the same prompt.`;
   }
 
   function selectImage(entry) {
