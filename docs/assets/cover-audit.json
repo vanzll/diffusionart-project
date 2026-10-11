@@ -1,0 +1,172 @@
+{
+  "fetched_utc": "2026-09-26T05:41:05.390947+00:00",
+  "crossings": {
+    "Flow-GRPO-Fast": {
+      "run": "76zs2v12",
+      "target_reward": 8.509868247006416,
+      "plateau_window": [
+        981,
+        1030
+      ],
+      "baseline_first_step": 908,
+      "art_first_step": 41,
+      "baseline_first_gpu_hours": 1055.1142034820534,
+      "art_first_gpu_hours": 90.04275971022223,
+      "step_speedup": 22.146341463414632,
+      "gpu_hours_speedup": 11.717923871698817
+    },
+    "DiffusionNFT": {
+      "run": "njpjfulm",
+      "target_reward": 10.105073250247955,
+      "plateau_window": [
+        254,
+        303
+      ],
+      "baseline_first_step": 291,
+      "art_first_step": 56,
+      "baseline_first_gpu_hours": 1459.2523754759288,
+      "art_first_gpu_hours": 121.4258854610311,
+      "step_speedup": 5.196428571428571,
+      "gpu_hours_speedup": 12.017638330866799
+    }
+  },
+  "source_sha256": "96e782be5e02f2b7a897f860b8d24420617fce6fe81c4272c282dad3ac19a032",
+  "reward": "(raw VQ + raw MQ) / 2; recovered using the verified fixed scorer calibration; training objective unchanged",
+  "raw_conversion": {
+    "VQ": {
+      "scale": 2.2476,
+      "offset": 3.6757
+    },
+    "MQ": {
+      "scale": 1.3811,
+      "offset": 1.1646
+    }
+  },
+  "smoothing": "causal EMA half-life 8 optimizer updates for all methods",
+  "plateau_target": "mean unsmoothed raw VQ/MQ composite over each baseline last 50 logged successful updates",
+  "crossing": "first observed EMA8 crossing of that same target for BOTH baseline and ART; no interpolation",
+  "cost": "_runtime * 32 / 3600, including evaluation and waits; not total baseline endpoint runtime",
+  "qualification": "Empirical late-stage plateau level, not a proof of asymptotic convergence. NFT still rises slowly.",
+  "geometry": {
+    "canvas": [
+      6.6,
+      3.4
+    ],
+    "axes": [
+      [
+        0.077,
+        0.58,
+        0.305,
+        0.39
+      ],
+      [
+        0.077,
+        0.09,
+        0.305,
+        0.39
+      ],
+      [
+        0.515,
+        0.6937058823529412,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.635,
+        0.6937058823529412,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.755,
+        0.6937058823529412,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.875,
+        0.6937058823529412,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.515,
+        0.516,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.635,
+        0.516,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.755,
+        0.516,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.875,
+        0.516,
+        0.08999999999999997,
+        0.17470588235294116
+      ],
+      [
+        0.515,
+        0.245,
+        0.10950000000000004,
+        0.2125588235294118
+      ],
+      [
+        0.6285000000000001,
+        0.245,
+        0.10950000000000004,
+        0.2125588235294118
+      ],
+      [
+        0.742,
+        0.245,
+        0.10950000000000004,
+        0.2125588235294118
+      ],
+      [
+        0.8555,
+        0.245,
+        0.10950000000000004,
+        0.2125588235294118
+      ],
+      [
+        0.515,
+        0.018,
+        0.10950000000000004,
+        0.21255882352941177
+      ],
+      [
+        0.6285000000000001,
+        0.018,
+        0.10950000000000004,
+        0.21255882352941177
+      ],
+      [
+        0.742,
+        0.018,
+        0.10950000000000004,
+        0.21255882352941177
+      ],
+      [
+        0.8555,
+        0.018,
+        0.10950000000000004,
+        0.21255882352941177
+      ]
+    ]
+  },
+  "qualitative_panel": "Unmodified media, labels and geometry from render_cover.py; approved cjy bold styling",
+  "run_end_steps": {
+    "4dnkgeto": 300,
+    "76zs2v12": 1030,
+    "njpjfulm": 303
+  }
+}

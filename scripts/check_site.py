@@ -26,17 +26,21 @@ class Page(HTMLParser):
 
 
 def main():
-    page = Page()
-    page.feed((DOCS / 'index.html').read_text())
-    assert len(page.ids) == len(set(page.ids)), 'Duplicate element IDs'
-    for link in page.references:
-        url = urlsplit(link)
-        if url.scheme or url.netloc:
-            continue
-        if url.path:
-            assert (DOCS / url.path).is_file(), link
-        if url.fragment:
-            assert url.fragment in page.ids, link
+    pages = {}
+    for path in DOCS.glob('*.html'):
+        page = Page()
+        page.feed(path.read_text())
+        assert len(page.ids) == len(set(page.ids)), f'Duplicate IDs: {path.name}'
+        pages[path.name] = page
+    for name, page in pages.items():
+        for link in page.references:
+            url = urlsplit(link)
+            if url.scheme or url.netloc:
+                continue
+            if url.path:
+                assert (DOCS / url.path).is_file(), link
+            if url.fragment:
+                assert url.fragment in pages[url.path or name].ids, link
     source = (DOCS / 'media.js').read_text()
     data = json.loads(source.removeprefix('window.PROJECT_MEDIA = ').removesuffix(';\n'))
     provenance = json.loads((DOCS / 'assets/provenance.json').read_text())
@@ -51,6 +55,9 @@ def main():
         assert hashlib.sha256((DOCS / asset['asset']).read_bytes()).hexdigest() == asset['sha256']
     method = json.loads((DOCS / 'assets/method-provenance.json').read_text())
     assert hashlib.sha256((DOCS / 'assets' / method['asset']).read_bytes()).hexdigest() == method['sha256']
+    research = json.loads((DOCS / 'assets/research-provenance.json').read_text())
+    for asset in research['files']:
+        assert hashlib.sha256((DOCS / 'assets' / asset['asset']).read_bytes()).hexdigest() == asset['sha256']
     for pair in data['videos']:
         streams = []
         for side in pair['sides']:

@@ -1,0 +1,80 @@
+{
+  "source_release": "Author arXiv release, 2026-10-09",
+  "conversion": "Published PDFs rasterized at longest side 2200px; named panels cropped; lossless WebP; no curve or content edits.",
+  "files": [
+    {
+      "asset": "consistency-force.webp",
+      "sha256": "94e8a052d5b14b89c108218a253684d4e48f92c587ca9c7043119f43808f6c7b",
+      "source": "fig2_legend_review_20261008.pdf",
+      "source_sha256": "11d681fb4d9b12a98b3765677b8b7378943204eb2cb63607c06ce23954f360e7",
+      "crop_fraction": [
+        0.51,
+        0,
+        1,
+        1
+      ],
+      "width": 1078,
+      "height": 775
+    },
+    {
+      "asset": "ema-restoration.webp",
+      "sha256": "e295e4ba5b6746f8a87c6e79af1b4a9d7f4c080e5062dc05676b4a711e5745bf",
+      "source": "fig3_review_20261008_v2.pdf",
+      "source_sha256": "938e163ad3427975c705c008d139eeaca45489a4cf743105b8e33cf62e50a22b",
+      "crop_fraction": [
+        0.295,
+        0.115,
+        0.555,
+        0.89
+      ],
+      "width": 572,
+      "height": 596
+    },
+    {
+      "asset": "aggregation-first.webp",
+      "sha256": "e52dbaafcce454166705a47ad9b290269e719cfb100168345ef087ff7a9e4c13",
+      "source": "DiffusionART_method_overview_time_fixed_20260928.pdf",
+      "source_sha256": "cbc028c7bc6131bca61fe56825e6cc6c1f6a88e0cd9bd2ffb7bbc1c0c3ee8e5d",
+      "crop_fraction": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "width": 2200,
+      "height": 623
+    },
+    {
+      "asset": "video-efficiency.webp",
+      "sha256": "988ce93f05873a4ffee398ad6c1db601ac2108098134c5695c241ff990b9dfb8",
+      "source": "diffusionart_cover_base_model_20261008.pdf",
+      "source_sha256": "a0cb029dd0a72378f86116a95dab26dbba9bd3e431281afcbb9a2c70110586fb",
+      "crop_fraction": [
+        0,
+        0,
+        0.387,
+        1
+      ],
+      "width": 851,
+      "height": 1134
+    },
+    {
+      "asset": "DiffusionART-paper.pdf",
+      "sha256": "d60c53d9215f8fed9f8f8558e2bfeb615d6ab210127cf644ecc32ee46b786f8f",
+      "source": "DiffusionART-arxiv.pdf",
+      "source_sha256": "d60c53d9215f8fed9f8f8558e2bfeb615d6ab210127cf644ecc32ee46b786f8f"
+    },
+    {
+      "asset": "cover-curves.csv",
+      "sha256": "13f787423fea8e60ac2f36bd997dc9d7aafd57b4304634057f7b99ac96510290",
+      "source": "cover_curves.csv",
+      "source_sha256": "13f787423fea8e60ac2f36bd997dc9d7aafd57b4304634057f7b99ac96510290"
+    },
+    {
+      "asset": "cover-audit.json",
+      "sha256": "73e8959629dbf0fee2315e9819b84cc689ee7b037ff24bc19ec135008444e812",
+      "source": "cover_manifest.json",
+      "source_sha256": "73e8959629dbf0fee2315e9819b84cc689ee7b037ff24bc19ec135008444e812"
+    }
+  ]
+}
