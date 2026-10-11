@@ -22,8 +22,11 @@ def main():
     assets = Path(__file__).resolve().parents[1] / 'docs/assets'
     figures = args.release / 'source/Figures'
     panels = [
+        ('fig2_legend_review_20261008.pdf', 'branch-collapse.webp', (0, 0, .42, .87)),
         ('fig2_legend_review_20261008.pdf', 'consistency-force.webp', (.51, 0, 1, 1)),
         ('fig3_review_20261008_v2.pdf', 'ema-restoration.webp', (.299, .115, .555, .89)),
+        ('fig3_review_20261008_v2.pdf', 'two-update-restoration.webp', (0, 0, .55, .89)),
+        ('fig3_review_20261008_v2.pdf', 'restoration-gradient.webp', (.56, .07, .788, .89)),
         ('DiffusionART_method_overview_time_fixed_20260928.pdf', 'aggregation-first.webp', (0, 0, 1, 1)),
         ('DiffusionART_method_overview_time_fixed_20260928.pdf', 'aggregation-force.webp', (0, 0, .495, 1)),
         ('DiffusionART_method_overview_time_fixed_20260928.pdf', 'aggregation-states.webp', (.5, 0, 1, 1)),

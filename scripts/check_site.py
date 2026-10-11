@@ -58,6 +58,12 @@ def main():
     research = json.loads((DOCS / 'assets/research-provenance.json').read_text())
     for asset in research['files']:
         assert hashlib.sha256((DOCS / 'assets' / asset['asset']).read_bytes()).hexdigest() == asset['sha256']
+    brand = json.loads((DOCS / 'assets/brand-provenance.json').read_text())
+    assert hashlib.sha256((DOCS / 'assets' / brand['asset']).read_bytes()).hexdigest() == brand['sha256']
+    homepage = (DOCS / 'index.html').read_text()
+    teaser = homepage.split('<div class="showcase-reel">', 1)[1].split('</div>', 1)[0]
+    selected = re.findall(r'src="(assets/hf-video-\d+-after.mp4)"', teaser)
+    assert selected == [data['videos'][i]['sides'][1]['video'] for i in (1, 2, 7)]
     for pair in data['videos']:
         streams = []
         for side in pair['sides']:

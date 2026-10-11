@@ -3,6 +3,20 @@
   "conversion": "Published PDFs rasterized at longest side 2200px; named panels cropped; lossless WebP; no curve or content edits.",
   "files": [
     {
+      "asset": "branch-collapse.webp",
+      "sha256": "84912ffd7a1377f4c1f016c84f9b9c4cffb4261bd6ff0998f11b95f7b1ac3104",
+      "source": "fig2_legend_review_20261008.pdf",
+      "source_sha256": "11d681fb4d9b12a98b3765677b8b7378943204eb2cb63607c06ce23954f360e7",
+      "crop_fraction": [
+        0,
+        0,
+        0.42,
+        0.87
+      ],
+      "width": 924,
+      "height": 674
+    },
+    {
       "asset": "consistency-force.webp",
       "sha256": "94e8a052d5b14b89c108218a253684d4e48f92c587ca9c7043119f43808f6c7b",
       "source": "fig2_legend_review_20261008.pdf",
@@ -29,6 +43,34 @@
       ],
       "width": 563,
       "height": 596
+    },
+    {
+      "asset": "two-update-restoration.webp",
+      "sha256": "10afe712c9793f42fccf2ad16e628d63f53c42c26b24a06aec9bb6e06716fc35",
+      "source": "fig3_review_20261008_v2.pdf",
+      "source_sha256": "938e163ad3427975c705c008d139eeaca45489a4cf743105b8e33cf62e50a22b",
+      "crop_fraction": [
+        0,
+        0,
+        0.55,
+        0.89
+      ],
+      "width": 1210,
+      "height": 684
+    },
+    {
+      "asset": "restoration-gradient.webp",
+      "sha256": "3ddcc56c5c469c69ff147bc58fe5aecd0210947e7b44cb09ef373fc845b16c71",
+      "source": "fig3_review_20261008_v2.pdf",
+      "source_sha256": "938e163ad3427975c705c008d139eeaca45489a4cf743105b8e33cf62e50a22b",
+      "crop_fraction": [
+        0.56,
+        0.07,
+        0.788,
+        0.89
+      ],
+      "width": 502,
+      "height": 630
     },
     {
       "asset": "aggregation-first.webp",
