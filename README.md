@@ -4,7 +4,7 @@ Public project page: **https://vanzll.github.io/diffusionart-project/**
 
 This repository hosts only the paper website and its public figures, images,
 and videos. It is independent of the implementation repository:
-https://github.com/vanzll/DiffusionART (code release coming soon).
+https://github.com/vanzll/DiffusionART.
 
 Keep this website repository **public**. GitHub Pages publishes `main:/docs`.
 Changing the code repository's visibility does not affect this website.
