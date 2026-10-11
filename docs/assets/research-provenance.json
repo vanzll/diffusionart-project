@@ -18,16 +18,16 @@
     },
     {
       "asset": "ema-restoration.webp",
-      "sha256": "e295e4ba5b6746f8a87c6e79af1b4a9d7f4c080e5062dc05676b4a711e5745bf",
+      "sha256": "e574222e09f860cbac1bba8ee56ad2b5a96f3bdb040a99bb315214f57e61ba89",
       "source": "fig3_review_20261008_v2.pdf",
       "source_sha256": "938e163ad3427975c705c008d139eeaca45489a4cf743105b8e33cf62e50a22b",
       "crop_fraction": [
-        0.295,
+        0.299,
         0.115,
         0.555,
         0.89
       ],
-      "width": 572,
+      "width": 563,
       "height": 596
     },
     {
