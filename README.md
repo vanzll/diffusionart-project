@@ -2,6 +2,12 @@
 
 Public project page: **https://vanzll.github.io/diffusionart-project/**
 
+Paper: https://arxiv.org/abs/2610.12572
+
+Released models:
+- https://huggingface.co/vanzl/DiffusionART-SD35M-MultiReward
+- https://huggingface.co/vanzl/DiffusionART-HunyuanVideo-7-2-1
+
 This repository hosts only the paper website and its public figures, images,
 and videos. It is independent of the implementation repository:
 https://github.com/vanzll/DiffusionART.
