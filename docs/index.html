@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://vanzll.github.io/diffusionart-project/">
   <link rel="canonical" href="https://vanzll.github.io/diffusionart-project/">
   <title>DiffusionART | Efficient diffusion reinforcement</title>
-  <link rel="stylesheet" href="style.css?v=insights-v4">
+  <link rel="stylesheet" href="style.css?v=citation-v1">
   <script src="app.js?v=insights-v1" defer></script>
 </head>
 <body>
@@ -99,6 +99,18 @@
       <div class="scope-results"><h3>Beyond the headline comparison</h3><table class="scope-table"><thead><tr><th scope="col">Setting</th><th scope="col">Result</th></tr></thead><tbody><tr><th scope="row">Text to image · SD3.5-M</th><td><strong>10.0× / 5.2× / 9.6×</strong> fewer training steps to Flow-GRPO's step-500 rewards on GenEval / OCR / PickScore.</td></tr><tr><th scope="row">Image to video · Wan2.1-I2V-14B</th><td>MQ 6 in <strong>45.8 vs. 220.3 GPU hours</strong>: 4.8× fewer than Flow-GRPO-Fast.</td></tr><tr><th scope="row">Pairwise video feedback · K = 2</th><td><strong>3.4× fewer GPU hours</strong> than K = 8 over 400 updates, with comparable step-400 evaluation VQ (12.235 vs. 12.092).</td></tr></tbody></table><p class="figure-note">Separate experiments with their own settings: I2V uses VQ:MQ = 1:1; pairwise video uses VQ-only feedback. Details in the paper.</p></div>
     </section>
     <section class="demo-invitation wrap"><div><h2>See what the model learns.</h2><p>20 video pairs and 6 image pairs, with their prompts.</p></div><a class="resource-link" href="demo.html"><img src="assets/play.svg" width="17" height="17" alt="">Explore demos</a></section>
+    <section class="citation wrap" id="citation" aria-labelledby="citation-heading">
+      <h2 id="citation-heading">Citation</h2>
+      <pre><code>@misc{wan2026diffusionartefficientstablescalable,
+  title={DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models},
+  author={Zhenglin Wan and Jiayu Chen and Zhengfeiyang Zhang and Pengfei Zhou and Wangbo Zhao and Fangyuan Kong and Pengfei Wan and Kun Gai and Yang You},
+  year={2026},
+  eprint={2610.12572},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2610.12572},
+}</code></pre>
+    </section>
   </main>
   <footer class="wrap"><p>DiffusionART · HPC-AI Lab, NUS · Kling AI · HKUST</p><a href="mailto:vanzl@u.nus.edu">vanzl@u.nus.edu</a><a href="https://github.com/vanzll/diffusionart-project">Website source</a></footer>
 </body>
