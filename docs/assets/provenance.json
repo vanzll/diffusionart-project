@@ -958,7 +958,7 @@
       "transform": "Full-frame JPEG preview, frame index 8"
     }
   ],
-  "note": "Author-selected HF inference videos and archived pretrained references. Original MP4 bytes are preserved. Posters are full-frame JPEG previews.",
+  "note": "Selected HF inference videos and archived pretrained references. Original MP4 bytes are preserved. Posters are full-frame JPEG previews.",
   "video_identity": "Archived pretrained reference vs published HF inference; same prompt, not an identical-noise protocol comparison.",
   "image_identity": "Same prompt and logged media index. Per-image seeds are not asserted.",
   "video_selection": {
