@@ -6,7 +6,7 @@ Paper: https://arxiv.org/abs/2610.12572
 
 Released models:
 - https://huggingface.co/vanzl/DiffusionART-SD35M-MultiReward
-- https://huggingface.co/vanzl/DiffusionART-HunyuanVideo-7-2-1
+- https://huggingface.co/vanzl/DiffusionART-HunyuanVideo
 
 This repository hosts only the paper website and its public figures, images,
 and videos. It is independent of the implementation repository:
@@ -30,3 +30,13 @@ use the October 9 paper release and the audited measured cover curves.
 No experiment credentials, private logs, or training code are published here.
 Research media and website content retain their original rights. Lucide icons
 are distributed under the license in `docs/assets/LUCIDE-LICENSE`.
+
+## Discoverability
+
+The homepage FAQ uses native HTML `details` elements: answers are in the
+initial HTML and collapsed by default, with no JavaScript or remote request
+required to expand them. `docs/sitemap.xml` lists the public pages. The domain's
+root `robots.txt` is owned by the separate personal-site repository; no
+project-local robots file is used. Search Console and Bing Webmaster Tools
+verification and sitemap submission are account-level follow-up steps, not
+guarantees of indexing or ranking.

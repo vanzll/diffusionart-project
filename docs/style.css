@@ -23,8 +23,9 @@ nav a { text-decoration:none; }nav a:hover,nav a[aria-current=page] { color:var(
 .skip { position:absolute; top:-80px; left:12px; z-index:99; background:white; padding:10px; }.skip:focus { top:10px; }
 .paper-heading { padding-top:44px; padding-bottom:32px; text-align:center; }
 .paper-logo { width:500px; margin-inline:auto; }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; border:0; }
 h1 { font-size:64px; font-weight:750; line-height:1.1; color:var(--art); }
-.paper-title { font-size:27px; line-height:1.35; font-weight:550; margin:12px auto 20px; max-width:870px; text-wrap:balance; }
+.paper-title { font-size:27px; line-height:1.35; font-weight:550; color:var(--ink); margin:12px auto 20px; max-width:870px; text-wrap:balance; }
 .author-names { display:flex; justify-content:center; flex-wrap:wrap; column-gap:18px; row-gap:3px; max-width:930px; margin-inline:auto; font-size:13px; }
 .author-names span { white-space:nowrap; }sup { font-size:9px; }
 .affiliations { display:flex; justify-content:center; flex-wrap:wrap; gap:5px 24px; margin-top:9px; color:var(--muted); font-size:12px; }
@@ -69,6 +70,14 @@ math { font-family:"STIX Two Math","Cambria Math",serif; }.guidance-term { color
 .scope-results { margin-top:48px; }.scope-results h3 { font-size:20px; margin-bottom:13px; }.scope-table { width:100%; border-collapse:collapse; font-size:13px; text-align:left; }.scope-table td,.scope-table th { border-bottom:1px solid var(--line); padding:17px 0; }.scope-table th { width:36%; padding-right:28px; font-weight:550; }.scope-table thead { color:var(--muted); font-size:11px; }.scope-table td { color:#535b68; }.scope-table strong { color:var(--ink); font-weight:650; }.scope-results>.figure-note { margin-top:14px; }
 .demo-invitation { display:flex; align-items:center; justify-content:space-between; gap:28px; padding-block:38px; border-top:1px solid var(--line); }.demo-invitation h2 { font-size:26px; }.demo-invitation p { margin-top:8px; font-size:14px; color:var(--muted); }.demo-invitation .resource-link { white-space:nowrap; }
 .citation { padding-block:36px 48px; border-top:1px solid var(--line); }
+.faq { padding-block:36px 48px; border-top:1px solid var(--line); }
+.faq h2 { font-size:26px; margin-bottom:22px; }
+.faq details { max-width:850px; margin-inline:auto; border-bottom:1px solid var(--line); }
+.faq summary { padding-block:17px; cursor:pointer; font-size:15px; font-weight:600; line-height:1.6; }
+.faq details[open] summary { color:var(--art); }
+.faq details p { max-width:76ch; padding-bottom:20px; font-size:15px; color:#535b68; overflow-wrap:anywhere; }
+.faq-resources { margin:24px auto 0; max-width:850px; font-size:13px; color:var(--muted); }
+.faq-resources span { padding-inline:10px; }
 .citation h2 { font-size:26px; }
 .citation pre { margin:20px 0 0; font:12px/1.75 ui-monospace,SFMono-Regular,Consolas,monospace; white-space:pre-wrap; overflow-wrap:anywhere; }
 footer { border-top:1px solid var(--line); padding-block:24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:11px; color:var(--muted); }

@@ -4,14 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="DiffusionART discovers what destabilizes diffusion reinforcement, then builds efficient reward guidance with adaptive restoration. Across image and video generation.">
+  <meta name="description" content="DiffusionART is group-based online reinforcement learning for diffusion image and video models, with aggregation-first reward guidance, adaptive restoration, and no reward-model backpropagation.">
   <meta property="og:title" content="DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models">
   <meta property="og:description" content="Aggregation-first guidance and adaptive restoration: 12.02x fewer GPU hours to DiffusionNFT's late-stage mean reward on HunyuanVideo-13B, VQ:MQ=1:1.">
   <meta property="og:image" content="https://vanzll.github.io/diffusionart-project/assets/hf-video-00101-after.jpg">
   <meta property="og:url" content="https://vanzll.github.io/diffusionart-project/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models">
+  <meta name="twitter:description" content="Group-based online RL for diffusion image and video models, without reward-model backpropagation.">
+  <meta name="twitter:image" content="https://vanzll.github.io/diffusionart-project/assets/hf-video-00101-after.jpg">
+  <meta name="citation_title" content="DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models">
+  <meta name="citation_author" content="Zhenglin Wan">
+  <meta name="citation_author" content="Jiayu Chen">
+  <meta name="citation_author" content="Zhengfeiyang Zhang">
+  <meta name="citation_author" content="Pengfei Zhou">
+  <meta name="citation_author" content="Wangbo Zhao">
+  <meta name="citation_author" content="Fangyuan Kong">
+  <meta name="citation_author" content="Pengfei Wan">
+  <meta name="citation_author" content="Kun Gai">
+  <meta name="citation_author" content="Yang You">
+  <meta name="citation_publication_date" content="2026/10/08">
+  <meta name="citation_arxiv_id" content="2610.12572">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2610.12572">
   <link rel="canonical" href="https://vanzll.github.io/diffusionart-project/">
-  <title>DiffusionART | Efficient diffusion reinforcement</title>
-  <link rel="stylesheet" href="style.css?v=citation-v1">
+  <title>DiffusionART: Efficient, Stable and Scalable Reinforcement of Diffusion Models</title>
+  <link rel="stylesheet" href="style.css?v=faq-v1">
   <script src="app.js?v=insights-v1" defer></script>
 </head>
 <body>
@@ -19,13 +36,13 @@
   <header class="site-header"><a href="index.html" class="wordmark"><img src="assets/logo.svg" width="170" height="36" alt="DiffusionART"></a><nav aria-label="Main navigation"><a href="#insight">Insights</a><a href="#method">Method</a><a href="#results">Results</a><a href="demo.html" class="demo-link">Demo <img src="assets/play.svg" width="14" height="14" alt=""></a></nav></header>
   <main id="main">
     <header class="paper-heading wrap">
-      <h1><img class="paper-logo" src="assets/logo.svg" width="500" height="106" alt="DiffusionART"></h1>
-      <p class="paper-title">Efficient, Stable and Scalable<br>Reinforcement of Diffusion Models</p>
+      <div><img class="paper-logo" src="assets/logo.svg" width="500" height="106" alt="" aria-hidden="true"></div>
+      <h1 class="paper-title"><span class="sr-only">DiffusionART: </span>Efficient, Stable and Scalable<br>Reinforcement of Diffusion Models</h1>
       <div class="authors">
         <p class="author-names"><span>Zhenglin Wan<sup>1,2</sup></span><span>Jiayu Chen<sup>2,†</sup></span><span>Zhengfeiyang Zhang<sup>1</sup></span><span>Pengfei Zhou<sup>1</sup></span><span>Wangbo Zhao<sup>3</sup></span><span>Fangyuan Kong<sup>2</sup></span><span>Pengfei Wan<sup>2</sup></span><span>Kun Gai<sup>2</sup></span><span>Yang You<sup>1</sup></span></p>
         <p class="affiliations"><span><sup>1</sup> HPC-AI Lab, NUS</span><span><sup>2</sup> Kling AI</span><span><sup>3</sup> HKUST</span></p>
       </div>
-      <div class="paper-links"><a class="resource-link" href="https://arxiv.org/abs/2610.12572">Paper</a><a class="resource-link" href="https://github.com/vanzll/DiffusionART"><img src="assets/code-xml.svg" width="17" height="17" alt="">Code</a><a class="resource-link" href="https://huggingface.co/vanzl/DiffusionART-SD35M-MultiReward">Image model</a><a class="resource-link" href="https://huggingface.co/vanzl/DiffusionART-HunyuanVideo-7-2-1">Video model</a><a class="resource-link" href="demo.html"><img src="assets/play.svg" width="16" height="16" alt="">Demo</a><a class="contact-link" href="mailto:vanzl@u.nus.edu">Contact</a></div>
+      <div class="paper-links"><a class="resource-link" href="https://arxiv.org/abs/2610.12572">Paper</a><a class="resource-link" href="https://github.com/vanzll/DiffusionART"><img src="assets/code-xml.svg" width="17" height="17" alt="">Code</a><a class="resource-link" href="https://huggingface.co/vanzl/DiffusionART-SD35M-MultiReward">Image model</a><a class="resource-link" href="https://huggingface.co/vanzl/DiffusionART-HunyuanVideo">Video model</a><a class="resource-link" href="demo.html"><img src="assets/play.svg" width="16" height="16" alt="">Demo</a><a class="contact-link" href="mailto:vanzl@u.nus.edu">Contact</a></div>
       <p class="hero-thesis">Aggregate reward guidance first.<br>Restore as the policy moves.</p>
       <p class="hero-result"><strong>12.02×</strong> fewer GPU hours <span>and</span> <strong>28.8%</strong> higher training reward<br><small>vs. DiffusionNFT (EMA) · HunyuanVideo-13B · VQ:MQ = 1:1 · final-50-update mean reward</small></p>
     </header>
@@ -99,6 +116,16 @@
       <div class="scope-results"><h3>Beyond the headline comparison</h3><table class="scope-table"><thead><tr><th scope="col">Setting</th><th scope="col">Result</th></tr></thead><tbody><tr><th scope="row">Text to image · SD3.5-M</th><td><strong>10.0× / 5.2× / 9.6×</strong> fewer training steps to Flow-GRPO's step-500 rewards on GenEval / OCR / PickScore.</td></tr><tr><th scope="row">Image to video · Wan2.1-I2V-14B</th><td>MQ 6 in <strong>45.8 vs. 220.3 GPU hours</strong>: 4.8× fewer than Flow-GRPO-Fast.</td></tr><tr><th scope="row">Pairwise video feedback · K = 2</th><td><strong>3.4× fewer GPU hours</strong> than K = 8 over 400 updates, with comparable step-400 evaluation VQ (12.235 vs. 12.092).</td></tr></tbody></table><p class="figure-note">Separate experiments with their own settings: I2V uses VQ:MQ = 1:1; pairwise video uses VQ-only feedback. Details in the paper.</p></div>
     </section>
     <section class="demo-invitation wrap"><div><h2>See what the model learns.</h2><p>20 video pairs and 6 image pairs, with their prompts.</p></div><a class="resource-link" href="demo.html"><img src="assets/play.svg" width="17" height="17" alt="">Explore demos</a></section>
+    <section class="faq wrap" id="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently asked questions</h2>
+      <details id="faq-models"><summary>What is DiffusionART, and which models does it apply to?</summary><p>DiffusionART is a group-based reinforcement learning algorithm for diffusion-based foundation models. It generates multiple samples per prompt and aggregates their rewards into shared guidance. Our experiments cover DiT-based image and video generation with SD3.5-M, FLUX.1-dev, HunyuanVideo-13B, and a CFG- and step-distilled Wan2.1-I2V-14B model. Flow-matching vision-language-action (VLA) policies are a potential future application, not evaluated in this work.</p></details>
+      <details id="faq-rewards"><summary>Does DiffusionART require backpropagation through the reward model?</summary><p>No. DiffusionART uses reward outputs, not reward-model gradients. It can therefore use black-box feedback, including scores or pairwise judgments from a closed-source vision-language model (VLM) API.</p></details>
+      <details id="faq-process"><summary>Is DiffusionART forward-process or reverse-process RL?</summary><p>It is a mixed forward- and reverse-process RL approach: its regression-based learning principle is inspired by forward-process RL, but its updates act on states visited during reverse-process ODE rollouts. Aggregating reward guidance first avoids the forward-target consistency force, while direct regression avoids reverse-transition likelihood estimation.</p></details>
+      <details id="faq-pairwise"><summary>Does DiffusionART support pairwise feedback?</summary><p>Yes. DiffusionART-Pairwise assigns 1 to the winner and 0 to the loser, or 0.5 to both in a tie, and uses these labels in the covariance guidance. With one pair per prompt (K = 2), the covariance is proportional to the winner's latent endpoint minus the loser's: guidance points from the lower-reward sample toward the higher-reward sample. A tie gives zero guidance. For larger groups, the pairwise evidence is aggregated before normalization. Pairwise judgments can be more natural for video generation, where comparing two outputs is often easier than assigning calibrated absolute quality scores.</p></details>
+      <details id="faq-online"><summary>Is DiffusionART online or offline RL?</summary><p>DiffusionART is online RL. It repeatedly generates and scores fresh samples as the model changes, rather than training only on a fixed dataset of previously collected outputs and preferences.</p></details>
+      <details id="faq-onpolicy"><summary>Is DiffusionART on-policy or off-policy RL?</summary><p>DiffusionART uses on-policy rollout-and-update training: each iteration collects fresh samples from the current model, performs two updates on disjoint minibatches with a frozen rollout reference and target, then refreshes the rollouts. As in PPO-style training, multiple updates can use one fresh rollout batch; the policy has already moved by the second update. Restoration and trust-region masking control drift within the iteration, without an EMA-lagged rollout policy or a historical replay buffer.</p></details>
+      <p class="faq-resources"><a href="https://github.com/vanzll/DiffusionART/blob/main/docs/README.md">Training and inference documentation</a> <span aria-hidden="true">/</span> <a href="https://huggingface.co/papers/2610.12572">Hugging Face paper and models</a></p>
+    </section>
     <section class="citation wrap" id="citation" aria-labelledby="citation-heading">
       <h2 id="citation-heading">Citation</h2>
       <pre><code>@misc{wan2026diffusionartefficientstablescalable,
@@ -112,6 +139,6 @@
 }</code></pre>
     </section>
   </main>
-  <footer class="wrap"><p>DiffusionART · HPC-AI Lab, NUS · Kling AI · HKUST</p><a href="mailto:vanzl@u.nus.edu">vanzl@u.nus.edu</a><a href="https://github.com/vanzll/diffusionart-project">Website source</a></footer>
+  <footer class="wrap"><p>DiffusionART · HPC-AI Lab, NUS · Kling AI · HKUST</p><a href="#faq">FAQ</a><a href="mailto:vanzl@u.nus.edu">vanzl@u.nus.edu</a><a href="https://github.com/vanzll/diffusionart-project">Website source</a></footer>
 </body>
 </html>
